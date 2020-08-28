@@ -43,6 +43,7 @@ The building process may take half an hour or even longer. Similar to Linux envi
 
 ### Start a world with RR plugin
 * Clone this repo, and set environment variable `GAZEBO_MODEL_PATH` pointing to the `models` folder in this repo.
+* Close and reopen the ROS cmd 
 * Use roslaunch to bring up everything, inside `Gazebo_RR_Win10/world/`
 ```
 roslaunch world.launch
