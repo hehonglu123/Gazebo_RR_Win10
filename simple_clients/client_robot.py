@@ -5,12 +5,7 @@ import numpy as np
 import time
 import traceback
 import sys
-sys.path.append('../../')
-from vel_emulate import EmulatedVelocityControl
-from jog_joint import jog_joint
-sys.path.append('../../toolbox')
-from rp260_ik import inv
-from general_robotics_toolbox import * 
+
 
 Rd=np.array([[ -1, 0., 0 ],
  [ 0., 1,  0.],
@@ -28,7 +23,6 @@ with RR.ClientNodeSetup(argv=sys.argv):
 	cmd_w = robot.position_command.Connect()
 	state_w = robot.robot_state.Connect()
 	RobotJointCommand = RRN.GetStructureType("com.robotraconteur.robotics.robot.RobotJointCommand",robot)
-	vel_ctrl = EmulatedVelocityControl(robot,state_w, cmd_w, 0.01)
 
 	robot_const = RRN.GetConstants("com.robotraconteur.robotics.robot", robot)
 	halt_mode = robot_const["RobotCommandMode"]["halt"]
