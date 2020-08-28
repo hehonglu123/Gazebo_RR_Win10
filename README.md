@@ -39,7 +39,7 @@ git clone https://github.com/johnwason/RobotRaconteur_Gazebo_Server_Plugin.git
 ```
 catkin_make_isolated -DROBOTRACONTEUR_ROS=1 -DSWIG_EXECUTABLE=C:\swigwin-4.0.2\swig.exe -DCMAKE_PROGRAM_PATH=C:\opt\rosdeps\x64\tools\protobuf -DCMAKE_BUILD_TYPE=Release
 ```
-The building process may take half an hour or even longer.
+The building process may take half an hour or even longer. Similar to Linux environment, after building there'll be a `setup.bat` file under `catkin_ws\devel_isolated`, so run that file directly for every new window.
 
 ## Run RR driver with Gazebo
 * Clone this repo, and set environment variable `GAZEBO_MODEL_PATH` pointing to the `models` folder in this repo.
