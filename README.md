@@ -13,7 +13,7 @@ Follow installation guide on http://wiki.ros.org/Installation/Windows. At step 5
 ## Notes on Step 5
 There might be errors while installing. The process will install python3.7 for you, if there're errors with python, try
 * Make sure `python` command will bring up python3.7 under `C:\opt\python37amd64`
-* Add `C:\opt\ptyhon37` to your [Environment Variable](https://www.architectryan.com/2018/08/31/how-to-change-environment-variables-on-windows-10/)
+* Add `C:\opt\ptyhon37` to `PATH` in [Environment Variable](https://www.architectryan.com/2018/08/31/how-to-change-environment-variables-on-windows-10/)
 * Install numpy 1.18.0, `python -m pip install numpy==1.18.0`
 * Install empy, `python -m pip install empy`
 
