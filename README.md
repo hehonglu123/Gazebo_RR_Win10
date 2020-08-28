@@ -41,8 +41,14 @@ catkin_make_isolated -DROBOTRACONTEUR_ROS=1 -DSWIG_EXECUTABLE=C:\swigwin-4.0.2\s
 ```
 The building process may take half an hour or even longer. Similar to Linux environment, after building there'll be a `setup.bat` file under `catkin_ws\devel_isolated`, so run that file directly for every new window.
 
-## Run RR driver with Gazebo
+### Start a world with RR plugin
 * Clone this repo, and set environment variable `GAZEBO_MODEL_PATH` pointing to the `models` folder in this repo.
+* Use roslaunch to bring up everything, inside `Gazebo_RR_Win10/world/`
+```
+roslaunch world.launch
+```
+Feel free to modify the launch file to bring up different world.
+### Run RR driver with Gazebo
 * The abstract robot service is provided in google drive.
 * To start the robot service, run following command:
 ```
