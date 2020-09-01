@@ -34,7 +34,6 @@ git clone https://github.com/robotraconteur/robotraconteur.git
 git clone –recurse https://github.com/johnwason/robotraconteur_standard_robdef_cpp.git 
 git clone https://github.com/johnwason/RobotRaconteur_Gazebo_Server_Plugin.git
 ```
-* Remove `gazebo_robotraconteur_server_plugin_examples\` folder under `\catkin_ws\src\RobotRaconteur_Gazebo_Server_Plugin/`.
 * Go to `catkin_ws\`, build those packages using following command:
 ```
 catkin_make_isolated -DROBOTRACONTEUR_ROS=1 -DSWIG_EXECUTABLE=C:\swigwin-4.0.2\swig.exe -DCMAKE_PROGRAM_PATH=C:\opt\rosdeps\x64\tools\protobuf -DCMAKE_BUILD_TYPE=Release
